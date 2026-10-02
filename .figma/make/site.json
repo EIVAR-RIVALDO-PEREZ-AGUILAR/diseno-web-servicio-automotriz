@@ -1,0 +1,10 @@
+{
+  "description": "Provides an automotive service website featuring navigation for About Us, Services, Location, Contact, Diagnostics, and Scheduling to enhance customer engagement.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
