@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 
 const SERVICIOS = [
   {
-    imagen: '/images/mantenimiento.jpg',
+    imagen: '/images/mantenimiento_general.jpg',
     titulo: 'Mantenimiento General',
     desc: 'Servicios mayores y menores, baleros de rodamiento, masas, banda de accesorios, rectificación de discos y tambores.',
   },
@@ -21,7 +21,7 @@ const SERVICIOS = [
     desc: 'Clutch y frenos, sistema de enfriamiento y anticongelante.',
   },
   {
-    imagen: '/images/mecanica.jpg',
+    imagen: '/images/mecanica_avanzada.jpg',
     titulo: 'Mecánica Avanzada',
     desc: 'Reemplazo de bandas de tiempo y sincronización, servicios de transmisión DSG (VW), transmisiones PowerShift (Ford).',
   },
@@ -84,10 +84,10 @@ const GALERI = [
 ]
 
 const DIAGNOSTICO_ITEMS = [
-  { label: 'Lectura de códigos OBD-II', value: 'Precisión 99.8%' },
-  { label: 'Análisis de sensores en tiempo real', value: '256 parámetros' },
-  { label: 'Diagnóstico eléctrico multicanal', value: '12V — 48V' },
-  { label: 'Tiempo promedio de diagnóstico', value: '45 minutos' },
+  { label: 'Diagnostico y programacion', value: 'Precisión 99.8%' },
+  { label: 'Clonación de modulos', value: 'Precisión 99.8%' },
+  { label: 'Venta de computadoras de motor, modulos abs, direcciones asistidas, bcm carroceria y sensores.' },
+  { label: 'Sistema electrico y Red CAN BUS' },
 ]
 
 const PROGRAMACION_ITEMS = [
@@ -348,7 +348,7 @@ useEffect(() => {
                 { num: '18+', label: 'Años de experiencia' },
                 { num: '12k+', label: 'Vehículos atendidos' },
                 { num: '98%', label: 'Clientes satisfechos' },
-                { num: '24h', label: 'Respuesta garantizada' },
+                { num: 'REFACCIONARIA TORRES', label: 'Contamos con refacciones automotrices para todas las marcas' },
               ].map((s) => (
                 <div key={s.label} className="px-6 py-5 bg-[#0a0a0a]/80 backdrop-blur-sm">
                   <p className="font-display text-3xl font-800 text-[#1d4ed8]">{s.num}</p>
@@ -847,9 +847,7 @@ useEffect(() => {
               <span className="text-[#737373]">Computarizado</span>
             </h2>
             <p className="font-body text-[#a3a3a3] text-base leading-relaxed mb-10">
-              Utilizamos escáneres OBD-II de última generación compatibles con más de 10,000 modelos de vehículos.
-              Nuestro software detecta fallas en motor, transmisión, ABS, airbags y todos los sistemas electrónicos
-              en tiempo real, con una precisión del 99.8%.
+              Utilizamos equipos de ultima generación y plataformas de diagnostico automotriz información y bases de datos tecnicas.
             </p>
             <div className="space-y-0 divide-y divide-[#2a2a2a] border border-[#2a2a2a]">
               {DIAGNOSTICO_ITEMS.map((item) => (
@@ -975,48 +973,106 @@ useEffect(() => {
 
       {/* CONTACTO */}
       <section id="contacto" className="py-28 bg-[#0f0f0f] border-t border-[#2a2a2a]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <p className="font-display text-[#1d4ed8] text-lg font-700 uppercase tracking-[0.3em] mb-4">
-                Escríbenos
-              </p>
-              <h2 className="font-display font-800 text-6xl md:text-7xl uppercase leading-none text-white mb-8">
-                Agenda tu<br />
-                <span className="text-[#737373]">Cita</span>
-              </h2>
-              <p className="font-body text-[#737373] text-base leading-relaxed max-w-sm mb-8">
-                Completa el formulario y un asesor técnico se comunicará contigo en menos de 24 horas para
-                confirmar tu cita y orientarte sobre el servicio que necesitas.
-              </p>
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://www.facebook.com/joseantonio.torresdelavega"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 border border-[#2a2a2a] hover:border-[#1d4ed8] px-4 py-3 group transition-all duration-200"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#1d4ed8">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                  <span className="font-display text-xs font-700 uppercase tracking-widest text-[#737373] group-hover:text-white transition-colors">Facebook</span>
-                </a>
-                <a
-                  href="mailto:tallertorres@gmail.com"
-                  className="flex items-center gap-3 border border-[#2a2a2a] hover:border-[#1d4ed8] px-4 py-3 group transition-all duration-200"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <span className="font-display text-xs font-700 uppercase tracking-widest text-[#737373] group-hover:text-white transition-colors">Correo</span>
-                </a>
-              </div>
-            </div>
-            <ContactForm />
-          </div>
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-16">
+
+      <div>
+        <p className="font-display text-[#1d4ed8] text-lg font-700 uppercase tracking-[0.3em] mb-4">
+          Escríbenos
+        </p>
+
+        <h2 className="font-display font-800 text-6xl md:text-7xl uppercase leading-none text-white mb-8">
+          Agenda tu<br />
+          <span className="text-[#737373]">Cita</span>
+        </h2>
+
+        <p className="font-body text-[#737373] text-base leading-relaxed max-w-sm mb-8">
+          Completa el formulario y un asesor técnico se comunicará contigo en menos de 24 horas para
+          confirmar tu cita y orientarte sobre el servicio que necesitas.
+        </p>
+
+        <div className="flex items-center gap-3 flex-wrap">
+
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/joseantonio.torresdelavega"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 border border-[#2a2a2a] hover:border-[#1d4ed8] px-4 py-3 group transition-all duration-200"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="#1d4ed8"
+            >
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+
+            <span className="font-display text-xs font-700 uppercase tracking-widest text-[#737373] group-hover:text-white transition-colors">
+              Facebook
+            </span>
+          </a>
+
+          {/* Correo */}
+          <a
+            href="mailto:tallertorres@gmail.com"
+            className="flex items-center gap-3 border border-[#2a2a2a] hover:border-[#1d4ed8] px-4 py-3 group transition-all duration-200"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1d4ed8"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+
+            <span className="font-display text-xs font-700 uppercase tracking-widest text-[#737373] group-hover:text-white transition-colors">
+              Correo
+            </span>
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/529632527630?text=Hola%2C%20quiero%20agendar%20una%20cita%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 border border-[#2a2a2a] hover:border-[#25D366] px-4 py-3 group transition-all duration-200"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#25D366"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 11.5a8.4 8.4 0 0 1-9 9 8.4 8.4 0 0 1-4-.9L3 21l1.4-4.7a8.4 8.4 0 1 1 16.6-4.8Z" />
+              <path d="M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c.7 1.3 1.7 2.3 3 3l.6-.5c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.4.3-1 .4-1.5.2-1.4-.4-2.7-1.2-3.8-2.3-1.1-1.1-1.9-2.4-2.3-3.8-.2-.5-.1-1.1.1-1.5Z" />
+            </svg>
+
+            <span className="font-display text-xs font-700 uppercase tracking-widest text-[#737373] group-hover:text-white transition-colors">
+              WhatsApp
+            </span>
+          </a>
+
         </div>
-      </section>
+      </div>
+
+      <ContactForm />
+
+    </div>
+  </div>
+</section>
+
 
       {/* FOOTER */}
       <footer className="border-t border-[#2a2a2a] bg-[#0a0a0a]">
@@ -1111,7 +1167,7 @@ Mensaje:
 ${form.mensaje || 'Sin mensaje'}
   `.trim()
 
-  const numeroWhatsApp = '529631828511'
+  const numeroWhatsApp = '529632527630'
 
   const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`
 
