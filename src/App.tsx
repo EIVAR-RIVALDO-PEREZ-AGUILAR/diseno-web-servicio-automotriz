@@ -379,7 +379,7 @@ export default function App() {
             <div className="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14 lg:h-16 lg:w-16">
               <img
                 src="/images/logotipo_taller.jpg"
-                alt="Servicio Automotriz Torres"
+                alt="Logotipo taller automotriz Torres"
                 className="h-full w-full object-contain"
               />
             </div>
@@ -553,11 +553,11 @@ export default function App() {
             </h1>
 
             <p className="hero-fade hero-delay-3 mb-8 max-w-xl font-body text-base leading-relaxed text-[#a3a3a3] sm:mb-10 sm:text-lg">
-              Diagnóstico de precisión,
-              programación ECU y servicio
-              automotriz de alto rendimiento.
-              Tu vehículo merece los mejores
-              especialistas.
+            Taller mecánico en Comitán de Domínguez,
+  Chiapas, especializado en mantenimiento
+  automotriz, diagnóstico computarizado,
+  electricidad automotriz y programación
+  de ECU y módulos.
             </p>
 
             <div className="hero-fade hero-delay-4 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
@@ -702,7 +702,7 @@ export default function App() {
             <div className="aspect-[8/7] w-full overflow-hidden">
               <img
                 src="/images/fachadaTaller.jpg"
-                alt="Mecánico trabajando en taller"
+                alt="imagen fachada taller torres"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -1024,7 +1024,7 @@ export default function App() {
             <div className="aspect-square w-full overflow-hidden">
               <img
                 src="/images/diagnostico.jpg"
-                alt="Diagnóstico computarizado de vehículo"
+                alt="Diagnóstico computarizado de vehículo en taller"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -1386,7 +1386,7 @@ export default function App() {
             <div className="flex h-14 w-14 shrink-0 items-center justify-center sm:h-16 sm:w-16">
               <img
                 src="/images/logotipo_taller.jpg"
-                alt="Servicio Automotriz Torres"
+                alt="logotipo taller Automotriz Torres"
                 className="h-full w-full object-contain"
               />
             </div>
