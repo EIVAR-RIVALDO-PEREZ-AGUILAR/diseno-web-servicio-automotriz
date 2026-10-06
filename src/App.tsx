@@ -1185,9 +1185,9 @@ export default function App() {
           <div className="grid gap-8 lg:grid-cols-3">
 
             <div className="lg:col-span-2 aspect-video bg-[#141414] border border-[#2a2a2a] overflow-hidden relative">
-              <iframe
+             <iframe
                 title="Mapa ubicación Servicio Automotriz Torres"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.597698965358!2d-92.14352332515307!3d16.24110913481416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858d3f54b3ed28f7%3A0xa1e03c0369d475a1!2sTALLER%20MECANICO%20TORRES!5e0!3m2!1ses-419!2smx!4v1790870859333!5m2!1ses-419!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.99471680423665!2d-92.14186071310424!3d16.24083400137522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858d3fb6231d5c57%3A0x85f3e597ba9db0ec!2sTaller%20Mec%C3%A1nico%20Torres!5e1!3m2!1ses-419!2smx!4v1791300354907!5m2!1ses-419!2smx"
                 width="600"
                 height="450"
                 className="h-full w-full grayscale opacity-80"
@@ -1198,6 +1198,7 @@ export default function App() {
                 allowFullScreen
                 referrerPolicy="strict-origin-when-cross-origin"
               />
+
 
               <div className="pointer-events-none absolute inset-0 border border-[#1d4ed8]/20" />
             </div>
@@ -1218,7 +1219,7 @@ export default function App() {
                   
                 },
                 {
-                  label: 'Teléfono',
+                  label: 'Teléfono Oficina',
                   value: '+52 (963) 101 4599',
                   
                 },
